@@ -12,11 +12,11 @@ class NautilusPage extends Page {
     super.key,
     required this.child,
     required String path,
-    this.params,
+    this.params = const {},
   }) : super(name: path);
 
   final HandlerBuilder child;
-  final Map<String, dynamic>? params;
+  final Map<String, dynamic> params;
 
   @override
   Route createRoute(BuildContext context) {

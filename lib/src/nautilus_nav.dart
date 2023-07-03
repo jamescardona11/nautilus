@@ -73,11 +73,11 @@ class NautilusNav implements NavigationActions {
 /// Information before navigate send for delegate
 class ElevenNavState {
   final String name;
-  final Map<String, dynamic>? params;
+  final Map<String, dynamic> params;
 
   const ElevenNavState({
     required this.name,
-    this.params,
+    this.params = const {},
   });
 }
 
